@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>EduGenie - AI Learning Assistant</title>
+
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container">
+            <h1>🎓 EduGenie</h1>
+            <p>AI-Powered Learning Assistant</p>
+        </div>
+    </header>
+
+
+    <main class="container">
+
+        <!-- Question & Answer -->
+        <section class="card">
+            <h2>💬 Ask a Question</h2>
+
+            <textarea
+                id="question"
+                placeholder="Ask anything about your subject..."
+                rows="4"></textarea>
+
+            <button onclick="askQuestion()">
+                Ask Question
+            </button>
+
+            <div id="qaResult" class="result"></div>
+        </section>
+
+
+        <!-- Explain -->
+        <section class="card">
+            <h2>📖 Explain a Topic</h2>
+
+            <input
+                type="text"
+                id="explainTopic"
+                placeholder="Enter a topic..."
+            >
+
+            <button onclick="explainTopic()">
+                Explain
+            </button>
+
+            <div id="explainResult" class="result"></div>
+        </section>
+
+
+        <!-- Quiz -->
+        <section class="card">
+            <h2>📝 Generate Quiz</h2>
+
+            <input
+                type="text"
+                id="quizTopic"
+                placeholder="Enter quiz topic..."
+            >
+
+            <button onclick="generateQuiz()">
+                Generate Quiz
+            </button>
+
+            <div id="quizResult" class="result"></div>
+        </section>
+
+
+        <!-- Summarize -->
+        <section class="card">
+            <h2>📚 Summarize</h2>
+
+            <textarea
+                id="summaryText"
+                placeholder="Enter text to summarize..."
+                rows="5"></textarea>
+
+            <button onclick="summarizeText()">
+                Summarize
+            </button>
+
+            <div id="summaryResult" class="result"></div>
+        </section>
+
+
+        <!-- Learning Recommendations -->
+        <section class="card">
+            <h2>🎯 Learning Recommendations</h2>
+
+            <input
+                type="text"
+                id="recommendationTopic"
+                placeholder="Enter a topic..."
+            >
+
+            <button onclick="getRecommendations()">
+                Get Recommendations
+            </button>
+
+            <div id="recommendationResult" class="result"></div>
+        </section>
+
+    </main>
+
+
+    <footer>
+        <p>© 2026 EduGenie | AI Learning Assistant</p>
+
+        <a href="/docs" target="_blank">
+            Open API Documentation
+        </a>
+    </footer>
+
+
+    <script src="/static/js/app.js"></script>
+
+</body>
+</html>
